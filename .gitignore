@@ -21,3 +21,6 @@ DerivedData
 
 # Carthage
 Carthage/
+
+# Firebase configuration
+GoogleService-Info.plist
