@@ -27,11 +27,12 @@ import UIKit
 import Firebase
 
 class AnalyticsViewController: UIViewController {
-
+    @IBOutlet weak var favIceCream: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        favIceCream.selectedSegmentIndex = UISegmentedControlNoSegment
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,5 +56,11 @@ class AnalyticsViewController: UIViewController {
         let alertController = UIAlertController(title: message, message: "", preferredStyle: .Alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
         presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    @IBAction func favIceCreamChanged(sender: AnyObject) {
+        if let value = favIceCream.titleForSegmentAtIndex(favIceCream.selectedSegmentIndex) {
+            FIRAnalytics.setUserPropertyString(value, forName: "fav_ice_cream")
+        }
     }
 }

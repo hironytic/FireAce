@@ -44,6 +44,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="chM-zw-vIL">
+                                <rect key="frame" x="52" y="185" width="245" height="29"/>
+                                <segments>
+                                    <segment title="Vanilla"/>
+                                    <segment title="Strawberry"/>
+                                    <segment title="Chocolate"/>
+                                </segments>
+                                <connections>
+                                    <action selector="favIceCreamChanged:" destination="0uD-XG-BLn" eventType="valueChanged" id="MiC-WU-Kgn"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Ice Cream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gc0-AP-wbw">
+                                <rect key="frame" x="52" y="156" width="143" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -52,12 +69,27 @@
                             <constraint firstItem="9OO-OO-rHt" firstAttribute="top" secondItem="wfb-DQ-850" secondAttribute="bottom" constant="24" id="OFt-c8-mTp"/>
                             <constraint firstItem="wfb-DQ-850" firstAttribute="top" secondItem="5og-Wh-ORI" secondAttribute="bottom" constant="16" id="OZa-Vi-eCq"/>
                             <constraint firstItem="5og-Wh-ORI" firstAttribute="top" secondItem="92B-aj-7ZK" secondAttribute="bottom" constant="8" id="PYP-9a-yeb"/>
+                            <constraint firstItem="gc0-AP-wbw" firstAttribute="leading" secondItem="wfb-DQ-850" secondAttribute="leading" id="TRP-Vu-5lk"/>
+                            <constraint firstItem="chM-zw-vIL" firstAttribute="leading" secondItem="gc0-AP-wbw" secondAttribute="leading" id="VDB-lQ-UpD"/>
                             <constraint firstItem="WM2-ZY-oLJ" firstAttribute="top" secondItem="wfb-DQ-850" secondAttribute="top" id="cbE-yT-jXC"/>
                             <constraint firstItem="WM2-ZY-oLJ" firstAttribute="leading" secondItem="wfb-DQ-850" secondAttribute="trailing" constant="64" id="k2u-uZ-Glo"/>
                             <constraint firstItem="9OO-OO-rHt" firstAttribute="leading" secondItem="5og-Wh-ORI" secondAttribute="leading" id="ll0-Fr-htW"/>
+                            <constraint firstItem="chM-zw-vIL" firstAttribute="top" secondItem="gc0-AP-wbw" secondAttribute="bottom" constant="8" id="p4u-dn-4xt"/>
                             <constraint firstItem="5og-Wh-ORI" firstAttribute="leading" secondItem="40k-jC-kuU" secondAttribute="leadingMargin" id="s6p-1j-N9c"/>
+                            <constraint firstItem="gc0-AP-wbw" firstAttribute="top" secondItem="9OO-OO-rHt" secondAttribute="bottom" constant="16" id="unm-hn-YLj"/>
+                            <constraint firstItem="chM-zw-vIL" firstAttribute="top" secondItem="9OO-OO-rHt" secondAttribute="bottom" constant="16" id="vcT-cy-NTx"/>
+                            <constraint firstItem="chM-zw-vIL" firstAttribute="leading" secondItem="wfb-DQ-850" secondAttribute="leading" id="xuO-Ed-aaE"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="vcT-cy-NTx"/>
+                                <exclude reference="xuO-Ed-aaE"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="favIceCream" destination="chM-zw-vIL" id="LRw-FG-187"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gY8-PI-LF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
