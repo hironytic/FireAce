@@ -1,5 +1,5 @@
 //
-// ViewController.swift
+// AnalyticsViewController.swift
 // FireAce
 //
 // Copyright (c) 2016 Hironori Ichimiya <hiron@hironytic.com>
@@ -24,19 +24,36 @@
 //
 
 import UIKit
+import Firebase
 
-class ViewController: UIViewController {
+class AnalyticsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }    
+
+    @IBAction func dogButtonTapped(sender: AnyObject) {
+        eventButtonTapped(value: "dog", message: "🐶")
+    }
+    
+    @IBAction func catButtonTapped(sender: AnyObject) {
+        eventButtonTapped(value: "cat", message: "🐱")
     }
 
-
+    private func eventButtonTapped(value value: String, message: String) {
+        FIRAnalytics.logEventWithName("ace_event", parameters: [
+            "value": value,
+        ])
+        
+        let alertController = UIAlertController(title: message, message: "", preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        presentViewController(alertController, animated: true, completion: nil)
+    }
 }
-

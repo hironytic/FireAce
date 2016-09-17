@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0uD-XG-BLn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Analytics-->
+        <scene sceneID="INk-l9-YIr">
+            <objects>
+                <viewController title="Analytics" id="0uD-XG-BLn" customClass="AnalyticsViewController" customModule="FireAce" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="92B-aj-7ZK"/>
+                        <viewControllerLayoutGuide type="bottom" id="RTa-QZ-hpN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="40k-jC-kuU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5og-Wh-ORI">
+                                <rect key="frame" x="20" y="28" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfb-DQ-850">
+                                <rect key="frame" x="52" y="65" width="30" height="30"/>
+                                <state key="normal" title="Dog"/>
+                                <connections>
+                                    <action selector="dogButtonTapped:" destination="0uD-XG-BLn" eventType="touchUpInside" id="eyN-AE-waG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WM2-ZY-oLJ">
+                                <rect key="frame" x="146" y="65" width="30" height="30"/>
+                                <state key="normal" title="Cat"/>
+                                <connections>
+                                    <action selector="catButtonTapped:" destination="0uD-XG-BLn" eventType="touchUpInside" id="pIM-xh-Vxp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Properties" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9OO-OO-rHt">
+                                <rect key="frame" x="20" y="119" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfb-DQ-850" firstAttribute="leading" secondItem="40k-jC-kuU" secondAttribute="leadingMargin" constant="32" id="3Hg-cL-6gu"/>
+                            <constraint firstItem="wfb-DQ-850" firstAttribute="top" secondItem="5og-Wh-ORI" secondAttribute="bottom" constant="16" id="JOe-C1-ghv"/>
+                            <constraint firstItem="9OO-OO-rHt" firstAttribute="top" secondItem="wfb-DQ-850" secondAttribute="bottom" constant="24" id="OFt-c8-mTp"/>
+                            <constraint firstItem="wfb-DQ-850" firstAttribute="top" secondItem="5og-Wh-ORI" secondAttribute="bottom" constant="16" id="OZa-Vi-eCq"/>
+                            <constraint firstItem="5og-Wh-ORI" firstAttribute="top" secondItem="92B-aj-7ZK" secondAttribute="bottom" constant="8" id="PYP-9a-yeb"/>
+                            <constraint firstItem="WM2-ZY-oLJ" firstAttribute="top" secondItem="wfb-DQ-850" secondAttribute="top" id="cbE-yT-jXC"/>
+                            <constraint firstItem="WM2-ZY-oLJ" firstAttribute="leading" secondItem="wfb-DQ-850" secondAttribute="trailing" constant="64" id="k2u-uZ-Glo"/>
+                            <constraint firstItem="9OO-OO-rHt" firstAttribute="leading" secondItem="5og-Wh-ORI" secondAttribute="leading" id="ll0-Fr-htW"/>
+                            <constraint firstItem="5og-Wh-ORI" firstAttribute="leading" secondItem="40k-jC-kuU" secondAttribute="leadingMargin" id="s6p-1j-N9c"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gY8-PI-LF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="304"/>
+        </scene>
+    </scenes>
+</document>
