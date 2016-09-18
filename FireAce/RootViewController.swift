@@ -35,6 +35,7 @@ struct RootViewItem {
 class RootViewController: UITableViewController {
     let items = [
         RootViewItem(id: "analytics", title: "Analytics", storyboardName: "Analytics"),
+        RootViewItem(id: "authentication", title: "Authentication", storyboardName: "Authentication"),
     ]
     
     override func viewDidLoad() {

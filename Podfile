@@ -7,5 +7,7 @@ target 'FireAce' do
 
   # Pods for FireAce
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'FirebaseUI/Auth', '~> 0.5'
 
 end

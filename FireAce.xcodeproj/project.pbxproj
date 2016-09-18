@@ -10,6 +10,8 @@
 		50392A911D8D5A1B008FA159 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50392A901D8D5A1B008FA159 /* RootViewController.swift */; };
 		50392A941D8D8649008FA159 /* Analytics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50392A931D8D8649008FA159 /* Analytics.storyboard */; };
 		50392A961D8D86B1008FA159 /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50392A951D8D86B1008FA159 /* AnalyticsViewController.swift */; };
+		50392A991D8E87A3008FA159 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50392A981D8E87A3008FA159 /* AuthenticationViewController.swift */; };
+		50392A9B1D8E87CD008FA159 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50392A9A1D8E87CD008FA159 /* Authentication.storyboard */; };
 		50594B931D8BC4E90075247D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50594B921D8BC4E90075247D /* AppDelegate.swift */; };
 		50594B981D8BC4E90075247D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50594B961D8BC4E90075247D /* Main.storyboard */; };
 		50594B9A1D8BC4E90075247D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50594B991D8BC4E90075247D /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 		50392A901D8D5A1B008FA159 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		50392A931D8D8649008FA159 /* Analytics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Analytics.storyboard; sourceTree = "<group>"; };
 		50392A951D8D86B1008FA159 /* AnalyticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
+		50392A981D8E87A3008FA159 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		50392A9A1D8E87CD008FA159 /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		50594B8F1D8BC4E90075247D /* FireAce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireAce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50594B921D8BC4E90075247D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50594B971D8BC4E90075247D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +67,15 @@
 			path = Analytics;
 			sourceTree = "<group>";
 		};
+		50392A971D8E8787008FA159 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				50392A9A1D8E87CD008FA159 /* Authentication.storyboard */,
+				50392A981D8E87A3008FA159 /* AuthenticationViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		50594B861D8BC4E90075247D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				50392A921D8D861E008FA159 /* Analytics */,
+				50392A971D8E8787008FA159 /* Authentication */,
 				50594B921D8BC4E90075247D /* AppDelegate.swift */,
 				50392A901D8D5A1B008FA159 /* RootViewController.swift */,
 				50594B961D8BC4E90075247D /* Main.storyboard */,
@@ -166,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50392A9B1D8E87CD008FA159 /* Authentication.storyboard in Resources */,
 				50594B9D1D8BC4E90075247D /* LaunchScreen.storyboard in Resources */,
 				508EA1281D8BC9FE004B00A1 /* GoogleService-Info.plist in Resources */,
 				50392A941D8D8649008FA159 /* Analytics.storyboard in Resources */,
@@ -229,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50392A991D8E87A3008FA159 /* AuthenticationViewController.swift in Sources */,
 				50594B931D8BC4E90075247D /* AppDelegate.swift in Sources */,
 				50392A911D8D5A1B008FA159 /* RootViewController.swift in Sources */,
 				50392A961D8D86B1008FA159 /* AnalyticsViewController.swift in Sources */,

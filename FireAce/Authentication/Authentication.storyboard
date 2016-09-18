@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zJZ-My-QGQ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Authentication-->
+        <scene sceneID="Xgg-7t-tar">
+            <objects>
+                <viewController title="Authentication" id="zJZ-My-QGQ" customClass="AuthenticationViewController" customModule="FireAce" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aGv-Mh-MCc"/>
+                        <viewControllerLayoutGuide type="bottom" id="eL5-rP-LJC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XNC-Ok-Wvb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNy-q1-Scy">
+                                <rect key="frame" x="277" y="285" width="47" height="30"/>
+                                <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="signInButtonTapped:" destination="zJZ-My-QGQ" eventType="touchUpInside" id="cIM-lq-2Qp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55c-M0-LM5">
+                                <rect key="frame" x="20" y="28" width="45" height="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBf-E0-BvD">
+                                <rect key="frame" x="20" y="93" width="50" height="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mac-Vh-Rod">
+                                <rect key="frame" x="36" y="56" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(e-mail)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OpB-fq-aiP">
+                                <rect key="frame" x="36" y="121" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Tn-4v-eWF">
+                                <rect key="frame" x="270" y="158" width="60" height="30"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOutButtonTapped:" destination="zJZ-My-QGQ" eventType="touchUpInside" id="nxo-FD-1tP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DBf-E0-BvD" firstAttribute="leading" secondItem="55c-M0-LM5" secondAttribute="leading" id="3tR-s6-uGX"/>
+                            <constraint firstItem="OpB-fq-aiP" firstAttribute="top" secondItem="DBf-E0-BvD" secondAttribute="bottom" constant="8" id="5A1-7i-HKb"/>
+                            <constraint firstItem="8Tn-4v-eWF" firstAttribute="centerX" secondItem="XNC-Ok-Wvb" secondAttribute="centerX" id="BcB-NC-zXr"/>
+                            <constraint firstItem="OpB-fq-aiP" firstAttribute="leading" secondItem="DBf-E0-BvD" secondAttribute="leading" constant="16" id="EOE-ps-Lj8"/>
+                            <constraint firstItem="mac-Vh-Rod" firstAttribute="top" secondItem="55c-M0-LM5" secondAttribute="bottom" constant="8" id="Pc7-ch-eVZ"/>
+                            <constraint firstItem="8Tn-4v-eWF" firstAttribute="top" secondItem="OpB-fq-aiP" secondAttribute="bottom" constant="16" id="SRd-Jk-Ccj"/>
+                            <constraint firstItem="55c-M0-LM5" firstAttribute="top" secondItem="aGv-Mh-MCc" secondAttribute="bottom" constant="8" id="gto-y2-vx5"/>
+                            <constraint firstItem="mac-Vh-Rod" firstAttribute="leading" secondItem="55c-M0-LM5" secondAttribute="leading" constant="16" id="hvc-Sl-Lbh"/>
+                            <constraint firstItem="55c-M0-LM5" firstAttribute="leading" secondItem="XNC-Ok-Wvb" secondAttribute="leadingMargin" id="kdM-1E-EP0"/>
+                            <constraint firstItem="DBf-E0-BvD" firstAttribute="top" secondItem="mac-Vh-Rod" secondAttribute="bottom" constant="16" id="mKQ-zO-P4A"/>
+                            <constraint firstItem="kNy-q1-Scy" firstAttribute="centerY" secondItem="XNC-Ok-Wvb" secondAttribute="centerY" id="nKw-X0-9vc"/>
+                            <constraint firstItem="kNy-q1-Scy" firstAttribute="centerX" secondItem="XNC-Ok-Wvb" secondAttribute="centerX" id="s64-qv-k9R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailItemLabel" destination="DBf-E0-BvD" id="Jo1-A9-YnM"/>
+                        <outlet property="emailLabel" destination="OpB-fq-aiP" id="4Yd-Tf-aje"/>
+                        <outlet property="nameItemLabel" destination="55c-M0-LM5" id="h49-XE-jyo"/>
+                        <outlet property="nameLabel" destination="mac-Vh-Rod" id="ZjK-Tx-gf1"/>
+                        <outlet property="signInButton" destination="kNy-q1-Scy" id="8vr-1J-thG"/>
+                        <outlet property="signOutButton" destination="8Tn-4v-eWF" id="aeI-0R-IMU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="99S-zi-UIz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="527" y="387"/>
+        </scene>
+    </scenes>
+</document>
