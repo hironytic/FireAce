@@ -26,31 +26,31 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55c-M0-LM5">
-                                <rect key="frame" x="20" y="28" width="45" height="20"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <rect key="frame" x="20" y="28" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBf-E0-BvD">
-                                <rect key="frame" x="20" y="93" width="50" height="20"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <rect key="frame" x="20" y="94" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mac-Vh-Rod">
-                                <rect key="frame" x="36" y="56" width="54" height="21"/>
+                                <rect key="frame" x="36" y="57" width="54" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(e-mail)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OpB-fq-aiP">
-                                <rect key="frame" x="36" y="121" width="60" height="21"/>
+                                <rect key="frame" x="36" y="123" width="60" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Tn-4v-eWF">
-                                <rect key="frame" x="270" y="158" width="60" height="30"/>
+                                <rect key="frame" x="270" y="160" width="60" height="30"/>
                                 <state key="normal" title="Sign Out"/>
                                 <connections>
                                     <action selector="signOutButtonTapped:" destination="zJZ-My-QGQ" eventType="touchUpInside" id="nxo-FD-1tP"/>
