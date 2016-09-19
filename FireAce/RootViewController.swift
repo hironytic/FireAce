@@ -64,7 +64,7 @@ class RootViewController: UITableViewController {
         
         FIRAnalytics.logEventWithName(kFIREventSelectContent, parameters: [
             kFIRParameterContentType: "root_item",
-            kFIRParameterItemName: item.id,
+            kFIRParameterItemID: item.id,
         ])
         
         let storyboardName = item.storyboardName
