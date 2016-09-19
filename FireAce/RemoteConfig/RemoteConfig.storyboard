@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fzy-yj-pX3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Remote Config-->
+        <scene sceneID="dr5-Me-bHj">
+            <objects>
+                <viewController title="Remote Config" id="fzy-yj-pX3" customClass="RemoteConfigViewController" customModule="FireAce" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1lB-g2-vhz"/>
+                        <viewControllerLayoutGuide type="bottom" id="C7L-AM-gtC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rm2-mG-y6Z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPK-ff-T1g">
+                                <rect key="frame" x="20" y="28" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(type)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUf-RW-w0D">
+                                <rect key="frame" x="36" y="57" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDK-pa-tDh">
+                                <rect key="frame" x="20" y="94" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(level)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCW-kE-gCI">
+                                <rect key="frame" x="36" y="123" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OG-BG-F2a">
+                                <rect key="frame" x="20" y="550" width="39" height="30"/>
+                                <state key="normal" title="Fetch"/>
+                                <connections>
+                                    <action selector="fetchButtonTapped:" destination="fzy-yj-pX3" eventType="touchUpInside" id="VH6-BQ-3sv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLA-Th-5It">
+                                <rect key="frame" x="524" y="550" width="56" height="30"/>
+                                <state key="normal" title="Activate"/>
+                                <connections>
+                                    <action selector="activateButtonTapped:" destination="fzy-yj-pX3" eventType="touchUpInside" id="Ldt-23-NpF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C7L-AM-gtC" firstAttribute="top" secondItem="SLA-Th-5It" secondAttribute="bottom" constant="20" id="21O-GY-NJk"/>
+                            <constraint firstItem="LDK-pa-tDh" firstAttribute="leading" secondItem="HPK-ff-T1g" secondAttribute="leading" id="Es9-ta-pv5"/>
+                            <constraint firstItem="jCW-kE-gCI" firstAttribute="top" secondItem="LDK-pa-tDh" secondAttribute="bottom" constant="8" id="MXb-bK-xZJ"/>
+                            <constraint firstItem="1OG-BG-F2a" firstAttribute="leading" secondItem="rm2-mG-y6Z" secondAttribute="leadingMargin" id="P7y-wZ-1M6"/>
+                            <constraint firstItem="LDK-pa-tDh" firstAttribute="top" secondItem="jUf-RW-w0D" secondAttribute="bottom" constant="16" id="VWM-eb-wEP"/>
+                            <constraint firstItem="C7L-AM-gtC" firstAttribute="top" secondItem="1OG-BG-F2a" secondAttribute="bottom" constant="20" id="Vgm-78-Rda"/>
+                            <constraint firstItem="jUf-RW-w0D" firstAttribute="leading" secondItem="HPK-ff-T1g" secondAttribute="leading" constant="16" id="YBm-f1-XyN"/>
+                            <constraint firstItem="jCW-kE-gCI" firstAttribute="leading" secondItem="LDK-pa-tDh" secondAttribute="leading" constant="16" id="eet-Cu-uSv"/>
+                            <constraint firstItem="HPK-ff-T1g" firstAttribute="top" secondItem="1lB-g2-vhz" secondAttribute="bottom" constant="8" id="jNZ-qn-iBG"/>
+                            <constraint firstItem="jUf-RW-w0D" firstAttribute="top" secondItem="HPK-ff-T1g" secondAttribute="bottom" constant="8" id="lkz-pv-kUW"/>
+                            <constraint firstItem="HPK-ff-T1g" firstAttribute="leading" secondItem="rm2-mG-y6Z" secondAttribute="leadingMargin" id="qhp-NY-tUt"/>
+                            <constraint firstItem="SLA-Th-5It" firstAttribute="trailing" secondItem="rm2-mG-y6Z" secondAttribute="trailingMargin" id="w22-Kf-7Oq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="levelLabel" destination="jCW-kE-gCI" id="xkK-KC-YQU"/>
+                        <outlet property="typeLabel" destination="jUf-RW-w0D" id="J6S-Sg-2g8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lj0-Cq-Psf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="217"/>
+        </scene>
+    </scenes>
+</document>

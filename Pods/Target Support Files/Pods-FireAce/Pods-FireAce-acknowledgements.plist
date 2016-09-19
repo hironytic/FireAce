@@ -46,6 +46,14 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>Copyright 2016 Google Inc.</string>
+			<key>Title</key>
+			<string>FirebaseRemoteConfig</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>
                                  Apache License
                            Version 2.0, January 2004
@@ -251,6 +259,14 @@
 </string>
 			<key>Title</key>
 			<string>FirebaseUI</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2015 Google Inc.</string>
+			<key>Title</key>
+			<string>GoogleIPhoneUtilities</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

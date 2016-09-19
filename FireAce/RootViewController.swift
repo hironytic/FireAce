@@ -36,6 +36,7 @@ class RootViewController: UITableViewController {
     let items = [
         RootViewItem(id: "analytics", title: "Analytics", storyboardName: "Analytics"),
         RootViewItem(id: "authentication", title: "Authentication", storyboardName: "Authentication"),
+        RootViewItem(id: "remote_config", title: "Remote Config", storyboardName: "RemoteConfig"),
     ]
     
     override func viewDidLoad() {
