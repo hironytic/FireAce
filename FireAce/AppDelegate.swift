@@ -24,6 +24,7 @@
 //
 
 import UIKit
+import AudioToolbox
 import Firebase
 
 @UIApplicationMain
@@ -91,6 +92,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Print full message.
         print("%@", userInfo)
+        
+        self.handlePushNotification(userInfo)
+    }
+}
+
+// Cloud Messaging
+extension AppDelegate {
+    func handlePushNotification(userInfo: [NSObject : AnyObject]) {
+        guard UIApplication.sharedApplication().applicationState == .Active else { return }
+        
+        if let aps = userInfo["aps"] as? [String: AnyObject] {
+            if let alert = aps["alert"] as? String {
+                let alertController = UIAlertController(title: "Notification", message: alert, preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                currentVisibleViewController()?.presentViewController(alertController, animated: true, completion: nil)
+            }
+            
+            if let badge = aps["badge"] as? NSNumber {
+                UIApplication.sharedApplication().applicationIconBadgeNumber = badge.integerValue
+            }
+            
+            if let sound = aps["sound"] as? String {
+                if !sound.isEmpty {
+                    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+                }
+            }
+        }
     }
 }
 
@@ -107,6 +135,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        
 //        // Print full message.
 //        print("%@", userInfo)
+//
+//        self.handlePushNotification(userInfo)
 //    }
 //}
 //
