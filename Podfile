@@ -10,5 +10,6 @@ target 'FireAce' do
   pod 'Firebase/Auth'
   pod 'FirebaseUI/Auth', '~> 0.5'
   pod 'Firebase/RemoteConfig'
+  pod 'Firebase/Messaging'
 
 end

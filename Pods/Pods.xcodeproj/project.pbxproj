@@ -10,40 +10,24 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>00E886CA1F5851E59C98652C01505722</key>
+		<key>0228E4F37D86E1FB080FD45CBAAA1729</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>ic_visibility.png</string>
+			<string>FIRAuthPickerViewController~ipad.nib</string>
 			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility.png</string>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRAuthPickerViewController~ipad.nib</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0308D705538BA08949D1CB0CF0844A5D</key>
+		<key>06A3B2B42CE3AA59A68F7BC71BBE1F24</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>59DCE7985BA0DF5F19C0E0D62592DAF1</string>
-				<string>7271BFF9F6F8C3745E3BCF75C746EC02</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>FirebaseInstanceID</string>
-			<key>path</key>
-			<string>FirebaseInstanceID</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0556A3332919D85E7C3BCBA8C2279178</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0891F3A081E15DFE6E5C33E18588E67C</string>
+				<string>CFB1A25D86D7CA5B2BE01666CC3C829D</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -52,44 +36,46 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0891F3A081E15DFE6E5C33E18588E67C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>FirebaseRemoteConfig.framework</string>
-			<key>path</key>
-			<string>Frameworks/FirebaseRemoteConfig.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0A17826177B4543DDC1BEBCCED755107</key>
+		<key>0CC558F0A0D63F95D299536DCB6460A6</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>ic_email.png</string>
+			<string>FIRPasswordSignInViewController~iphone.nib</string>
 			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_email.png</string>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordSignInViewController~iphone.nib</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0E4B1B5C3B9B849A064F464AC765390F</key>
+		<key>0D79633891A581D9FBE41750CF0D3F5C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FIRMessaging.h</string>
+			<key>path</key>
+			<string>Headers/Public/FIRMessaging.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0E308DEBEBE94ACE3B876A76778FFB77</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>AE0B980747F30289EE109B897629F212</string>
+				<string>AE254F86C9A885F1705506FF9A1A364E</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Firebase</string>
+			<string>FirebaseAnalytics</string>
 			<key>path</key>
-			<string>Firebase</string>
+			<string>FirebaseAnalytics</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -107,16 +93,42 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>13809F689F37197FAE480BF727CE9490</key>
+		<key>120587C0C0CBC389065BE12E521A147C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>ic_visibility.png</string>
+			<key>path</key>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1421A0C6031ADD32E6516A2A0386A302</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>FIRPasswordSignUpViewController~ipad.nib</string>
+			<key>path</key>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordSignUpViewController~ipad.nib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1583092D56B889C825C795B3DFB1971E</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>FirebaseInstanceID.framework</string>
+			<string>GoogleNetworkingUtilities.framework</string>
 			<key>path</key>
-			<string>Frameworks/FirebaseInstanceID.framework</string>
+			<string>Frameworks/GoogleNetworkingUtilities.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -135,16 +147,42 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>1739EF83EEB473467C27CB15BE93DB21</key>
+		<key>15E2468CCBE6C2D5C5454761BE4F53F7</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>ic_visibility@2x.png</string>
+			<string>ic_visibility_off.png</string>
 			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility@2x.png</string>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility_off.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>19029B6275C72587EF862B64A5C446E5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1583092D56B889C825C795B3DFB1971E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1A73BC0DBB5933EDF20BF8F47E4491D2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>FIRAuthUITableViewCell~iphone.nib</string>
+			<key>path</key>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRAuthUITableViewCell~iphone.nib</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -187,32 +225,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1D3B83BB9454FB86B5304DD59D70783B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>ic_email@3x.png</string>
-			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_email@3x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1D8AF4BF4F31DEC5EAC5ACCFB8019A5B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>FIRPasswordRecoveryViewController~ipad.nib</string>
-			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordRecoveryViewController~ipad.nib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>22DEC1141438478385C757C6C9C62998</key>
 		<dict>
 			<key>buildConfigurationList</key>
@@ -238,42 +250,43 @@
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
-		<key>23D210D0997D544F4940AE5004D2A0D7</key>
+		<key>259F6B46E94EC1AFC43C2EC3CD53B885</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>ic_visibility_off@3x.png</string>
+			<string>ic_visibility@3x.png</string>
 			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility_off@3x.png</string>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility@3x.png</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>25DD8FDEFCC46F29A62736340A7694E2</key>
+		<key>2921272D84F4835114B27C39D1B7E689</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>FIRPasswordVerificationViewController~iphone.nib</string>
+			<key>path</key>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordVerificationViewController~iphone.nib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D76805E376E17EBABA71B00FCE0F196</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>85CEA7391609568719E352B4EF87A4DE</string>
+				<string>BF72FE63AB3AA2237FFCAEB97DC36591</string>
+				<string>AD1A1FC9D440B87458B80B7FD2AAC5DB</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>285FC6E53355697C4E56D1AF5FBBAA0D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>en.lproj</string>
-			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/en.lproj</string>
+			<string>Auth</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -290,19 +303,6 @@
 			<string>Release</string>
 			<key>isa</key>
 			<string>XCConfigurationList</string>
-		</dict>
-		<key>307BE0C621990E31C92A84A5A46B2E23</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>980DDB6FD4F883B674815B85E84EFB70</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>31B33893DACF1F2671A651891ACE07EC</key>
 		<dict>
@@ -328,46 +328,57 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>33083AE63E0DFF9471A4A18648FA23F7</key>
+		<key>330EE7CA9FFCD9FDE943342CC1274013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>FirebaseAuthUI.framework</string>
+			<key>path</key>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>342E90B2BA10D4A2C59AEB1A676240DB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D8174F0440C9721BB1D98FF7C39E9D3A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>GoogleSymbolUtilities</string>
+			<key>path</key>
+			<string>GoogleSymbolUtilities</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>35EADFE35BF30D791CB282F202AA7AF4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>FIREmailEntryViewController~ipad.nib</string>
+			<string>FIRPasswordSignInViewController~ipad.nib</string>
 			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIREmailEntryViewController~ipad.nib</string>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordSignInViewController~ipad.nib</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>34514D4228380515DE227E8DE7EF1AE1</key>
+		<key>395C08C4CF74FCABEB4A616F0FE671D4</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>DC1E4F3441508AB3DE3ED019DC295789</string>
+				<string>82F67C6FE396673E99F078DD3094C825</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>FirebaseUI</string>
-			<key>path</key>
-			<string>FirebaseUI</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>379346D3DE2F1A2FC31A8683A0D72C44</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>56835D75A94AEE2D7C424E4246A1AA48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>GoogleSymbolUtilities</string>
-			<key>path</key>
-			<string>GoogleSymbolUtilities</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -397,19 +408,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>3C695576B082982B58F68959B2175171</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>FIRPasswordVerificationViewController~ipad.nib</string>
-			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordVerificationViewController~ipad.nib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>3DCAB2B7CDE207B3958B6CB957FCC758</key>
 		<dict>
 			<key>children</key>
@@ -436,16 +434,16 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>3EA89BFEC7E1481E83083909299CCE7D</key>
+		<key>3F5159E5DECAC54103AC3549B3476EF4</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>FIRAuthPickerViewController~iphone.nib</string>
+			<string>FirebaseInstanceID.framework</string>
 			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRAuthPickerViewController~iphone.nib</string>
+			<string>Frameworks/FirebaseInstanceID.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -520,97 +518,31 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>3FAC50B9C69337CDA053D506136D7D62</key>
+		<key>42D2CC51A03A504269AE077489D7801E</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>D1403CA191226A9585E54E830C90B34B</string>
+				<string>9444207585B0E2150E0791C709689BBA</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>GoogleIPhoneUtilities</string>
+			<string>FirebaseAuth</string>
 			<key>path</key>
-			<string>GoogleIPhoneUtilities</string>
+			<string>FirebaseAuth</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>42C34E7387577AF39B42BC49D07D682D</key>
+		<key>470972E8CE0F2316685C13B877143834</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>0E4B1B5C3B9B849A064F464AC765390F</string>
-				<string>4CF2B3C416EC47595A95C4BFDC97EC13</string>
-				<string>FB876C401525C10E8FEA46B0419891BB</string>
-				<string>0308D705538BA08949D1CB0CF0844A5D</string>
-				<string>D26355D03249A78E007803FEBC075130</string>
-				<string>34514D4228380515DE227E8DE7EF1AE1</string>
-				<string>804341A7302B598B8590A467F82014B2</string>
-				<string>3FAC50B9C69337CDA053D506136D7D62</string>
-				<string>4303446FDA97C22FE24B6948D364816C</string>
-				<string>379346D3DE2F1A2FC31A8683A0D72C44</string>
-				<string>DAADFE64D2E540FB80CF8130176670D6</string>
+				<string>FA8410C439D7D8FB9F0AB222DA747DB1</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4303446FDA97C22FE24B6948D364816C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9EF55CF3C935C0EA432FA3BEDEC026BF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>GoogleNetworkingUtilities</string>
-			<key>path</key>
-			<string>GoogleNetworkingUtilities</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>474296F8E2DA7F10BDD27BFD13051067</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>GoogleNetworkingUtilities.framework</string>
-			<key>path</key>
-			<string>Frameworks/GoogleNetworkingUtilities.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>48530CD42A5C70763AC2DC0B8F75A56A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>FIRAuthUITableViewCell~ipad.nib</string>
-			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRAuthUITableViewCell~ipad.nib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>488E5DA9765EE9914469CF1623A879A2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Firebase.h</string>
-			<key>path</key>
-			<string>Headers/Firebase.h</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -625,18 +557,16 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>4CF2B3C416EC47595A95C4BFDC97EC13</key>
+		<key>4F9FD78B6EFD37645561DBEEE8159262</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>A678D5F613F1371C67A6DCC7B79B15ED</string>
+				<string>CCFFB11BAB6A1B0DDBBA0C3F66E9ECE3</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>FirebaseAnalytics</string>
-			<key>path</key>
-			<string>FirebaseAnalytics</string>
+			<string>Analytics</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -653,6 +583,19 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>5205970EF62970A670EAD8E12362A26F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>ic_email@3x.png</string>
+			<key>path</key>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_email@3x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>559714E1EF0E5BBFFFBA4D1CF277DB2C</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -666,31 +609,46 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>56835D75A94AEE2D7C424E4246A1AA48</key>
+		<key>5860715B026CCAAA5CB98A6BDB911C3C</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>FEEF247FBE461E80B46A947B9EA0E69F</string>
+				<string>395C08C4CF74FCABEB4A616F0FE671D4</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Frameworks</string>
+			<string>GoogleIPhoneUtilities</string>
+			<key>path</key>
+			<string>GoogleIPhoneUtilities</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>59DCE7985BA0DF5F19C0E0D62592DAF1</key>
+		<key>58CC6BA94CB201C77D97CED8DECEC56C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>FIRInstanceID.h</string>
+			<string>FIRPasswordVerificationViewController~ipad.nib</string>
 			<key>path</key>
-			<string>Headers/Public/FIRInstanceID.h</string>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordVerificationViewController~ipad.nib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5BDC4D576418D5FDB9BD168F179B2B0D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4F9FD78B6EFD37645561DBEEE8159262</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Firebase</string>
+			<key>path</key>
+			<string>Firebase</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -704,6 +662,21 @@
 			<string>text.plist.xml</string>
 			<key>path</key>
 			<string>Pods-FireAce-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5C94D90BBB5AC95BF69D05ED213B100A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>06A3B2B42CE3AA59A68F7BC71BBE1F24</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>FirebaseRemoteConfig</string>
+			<key>path</key>
+			<string>FirebaseRemoteConfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -785,29 +758,60 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>5FD79AA1428074633B71F02312D00405</key>
+		<key>60C440397A3B35F213AD0D38C2F77BF3</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>FIRAuthUITableViewCell~iphone.nib</string>
+			<string>ic_email.png</string>
 			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRAuthUITableViewCell~iphone.nib</string>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_email.png</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7271BFF9F6F8C3745E3BCF75C746EC02</key>
+		<key>690E200AC86CB0095EA68A8DF9266C9A</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>13809F689F37197FAE480BF727CE9490</string>
+				<string>EC63C3F226C2248C9393126D9820BE84</string>
+				<string>B56ED94E8857E9E3C9B43B82F1BE1362</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Frameworks</string>
+			<string>FirebaseInstanceID</string>
+			<key>path</key>
+			<string>FirebaseInstanceID</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6D0A4AB8405B379B4F560D285EB547D6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F87C074E3DD0BC6AA6CFE29979F27226</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>GoogleUtilities</string>
+			<key>path</key>
+			<string>GoogleUtilities</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6E5E55E725A2214A971840457ACBC167</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>FIRPasswordSignUpViewController~iphone.nib</string>
+			<key>path</key>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordSignUpViewController~iphone.nib</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -824,29 +828,16 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7AEAAA995C7906A52C8EA7C37916338C</key>
+		<key>7D16CE7EB59B64A61ADE4AB5CAFF86D0</key>
 		<dict>
+			<key>children</key>
+			<array>
+				<string>ADD0C618DAA11C499EB8EBFA13FC03B6</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>FirebaseAuth.framework</string>
-			<key>path</key>
-			<string>Frameworks/FirebaseAuth.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7B06B91F69A3F6C6F191A0E0A92648FC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>FIRPasswordSignInViewController~iphone.nib</string>
-			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordSignInViewController~iphone.nib</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -856,7 +847,7 @@
 			<array>
 				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
 				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>42C34E7387577AF39B42BC49D07D682D</string>
+				<string>DBF011531CCDE4C8B8725F58906BDA40</string>
 				<string>BAD1EB673F19009DFD691AA397759C5B</string>
 				<string>3E45D4AB952E3E8492058219EFD054DC</string>
 			</array>
@@ -865,35 +856,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>801EC632A2C560251CEA4F2D783C603F</key>
+		<key>7E3B57465DA8F05FD8B843F263966E60</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>FIRPasswordSignInViewController~ipad.nib</string>
+			<string>en.lproj</string>
 			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordSignInViewController~ipad.nib</string>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/en.lproj</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>804341A7302B598B8590A467F82014B2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>307BE0C621990E31C92A84A5A46B2E23</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>GoogleInterchangeUtilities</string>
-			<key>path</key>
-			<string>GoogleInterchangeUtilities</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>839FD0D0AAFEB35D199E6EAA02E24CB9</key>
+		<key>82F67C6FE396673E99F078DD3094C825</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -906,7 +882,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>85CEA7391609568719E352B4EF87A4DE</key>
+		<key>83AAC5D036AFA33BA0486422D1B5E644</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -919,42 +895,42 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8630F0A17C3ADB20E10792EB5D774740</key>
+		<key>8845C94FD18397DB56ADD681031BBD1B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>GoogleSymbolUtilities.framework</string>
+			<key>path</key>
+			<string>Frameworks/GoogleSymbolUtilities.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8907CC4D7EC7EF07CA13C5C176730688</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>FIRPasswordVerificationViewController~iphone.nib</string>
+			<string>FIRAuthPickerViewController~iphone.nib</string>
 			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordVerificationViewController~iphone.nib</string>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRAuthPickerViewController~iphone.nib</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>88E2ECCAEA3FA35B4934393CD47C2D5A</key>
+		<key>8A3F51D1C4664D79523A5BF604FEC635</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>FIRPasswordRecoveryViewController~iphone.nib</string>
+			<string>FIRPasswordRecoveryViewController~ipad.nib</string>
 			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordRecoveryViewController~iphone.nib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8DBF2E8397053A02C1D5135600091BD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7AEAAA995C7906A52C8EA7C37916338C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordRecoveryViewController~ipad.nib</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -977,29 +953,16 @@
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
-		<key>94523BDEF8421FEDB520FE55BB893C85</key>
+		<key>9444207585B0E2150E0791C709689BBA</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>A0977AF1700E29B8A9660B2333B0FA8E</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>ic_visibility_off@2x.png</string>
-			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility_off@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>94F4A98D23934FE94341242E10B66386</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>FIREmailEntryViewController~iphone.nib</string>
-			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIREmailEntryViewController~iphone.nib</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1016,29 +979,42 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>980DDB6FD4F883B674815B85E84EFB70</key>
+		<key>9F6CF19F5A843017E2002FF85E3BF7C6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>ic_visibility@2x.png</string>
+			<key>path</key>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A058C0E03CF62495E66EB3F196BA83EF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>ic_visibility_off@2x.png</string>
+			<key>path</key>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility_off@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A0977AF1700E29B8A9660B2333B0FA8E</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>GoogleInterchangeUtilities.framework</string>
+			<string>FirebaseAuth.framework</string>
 			<key>path</key>
-			<string>Frameworks/GoogleInterchangeUtilities.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9EF55CF3C935C0EA432FA3BEDEC026BF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>474296F8E2DA7F10BDD27BFD13051067</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
+			<string>Frameworks/FirebaseAuth.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1110,45 +1086,6 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>A678D5F613F1371C67A6DCC7B79B15ED</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FF256F55895C039042F0EA8635C13834</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AA7F695CB54E32626115CC90A5F1D136</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>ic_visibility_off.png</string>
-			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility_off.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AA98BDE01B5C5DBCC5655078AF6C7FA9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>FIRAuthPickerViewController~ipad.nib</string>
-			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRAuthPickerViewController~ipad.nib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>AB4552FB43C2BC9F4F672A523CCC9ED0</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1162,16 +1099,104 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>AE0B980747F30289EE109B897629F212</key>
+		<key>AD1A1FC9D440B87458B80B7FD2AAC5DB</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>488E5DA9765EE9914469CF1623A879A2</string>
+				<string>7E3B57465DA8F05FD8B843F263966E60</string>
+				<string>0228E4F37D86E1FB080FD45CBAAA1729</string>
+				<string>8907CC4D7EC7EF07CA13C5C176730688</string>
+				<string>EC87670A4D9DAF5377D0BAB91BFEC04C</string>
+				<string>1A73BC0DBB5933EDF20BF8F47E4491D2</string>
+				<string>F9B6ED9A6EC8E8073C95DAF6C24DE321</string>
+				<string>B7D6AED199B9A42B927C08A4DB65AA4C</string>
+				<string>8A3F51D1C4664D79523A5BF604FEC635</string>
+				<string>B2BAC89646B2CCB1DB658C2833048B13</string>
+				<string>35EADFE35BF30D791CB282F202AA7AF4</string>
+				<string>0CC558F0A0D63F95D299536DCB6460A6</string>
+				<string>1421A0C6031ADD32E6516A2A0386A302</string>
+				<string>6E5E55E725A2214A971840457ACBC167</string>
+				<string>58CC6BA94CB201C77D97CED8DECEC56C</string>
+				<string>2921272D84F4835114B27C39D1B7E689</string>
+				<string>60C440397A3B35F213AD0D38C2F77BF3</string>
+				<string>FA420F0373B18C1CC9B601EEDB7E36A9</string>
+				<string>5205970EF62970A670EAD8E12362A26F</string>
+				<string>120587C0C0CBC389065BE12E521A147C</string>
+				<string>9F6CF19F5A843017E2002FF85E3BF7C6</string>
+				<string>259F6B46E94EC1AFC43C2EC3CD53B885</string>
+				<string>15E2468CCBE6C2D5C5454761BE4F53F7</string>
+				<string>A058C0E03CF62495E66EB3F196BA83EF</string>
+				<string>C5427589BDB0D4552FCFBCF87AFCF1A8</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Analytics</string>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADD0C618DAA11C499EB8EBFA13FC03B6</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>FirebaseMessaging.framework</string>
+			<key>path</key>
+			<string>Frameworks/FirebaseMessaging.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AE254F86C9A885F1705506FF9A1A364E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C4B8560015B4701C3D7BC2AE854EF1F7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2BAC89646B2CCB1DB658C2833048B13</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>FIRPasswordRecoveryViewController~iphone.nib</string>
+			<key>path</key>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordRecoveryViewController~iphone.nib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B56ED94E8857E9E3C9B43B82F1BE1362</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3F5159E5DECAC54103AC3549B3476EF4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B7D6AED199B9A42B927C08A4DB65AA4C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>FIREmailEntryViewController~iphone.nib</string>
+			<key>path</key>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIREmailEntryViewController~iphone.nib</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1201,29 +1226,87 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BD94986F8D030A063CB357A5DEF98A1B</key>
+		<key>BF72FE63AB3AA2237FFCAEB97DC36591</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>330EE7CA9FFCD9FDE943342CC1274013</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>FIRPasswordSignUpViewController~iphone.nib</string>
-			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordSignUpViewController~iphone.nib</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C34A9F697CF33DFCBBA3B4E8173B9BEB</key>
+		<key>C4B8560015B4701C3D7BC2AE854EF1F7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>FirebaseAnalytics.framework</string>
+			<key>path</key>
+			<string>Frameworks/FirebaseAnalytics.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C5427589BDB0D4552FCFBCF87AFCF1A8</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>FIRPasswordSignUpViewController~ipad.nib</string>
+			<string>ic_visibility_off@3x.png</string>
 			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRPasswordSignUpViewController~ipad.nib</string>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility_off@3x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CA65225DC7BD50388923C320820E5DC1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2D76805E376E17EBABA71B00FCE0F196</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>FirebaseUI</string>
+			<key>path</key>
+			<string>FirebaseUI</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CCFFB11BAB6A1B0DDBBA0C3F66E9ECE3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Firebase.h</string>
+			<key>path</key>
+			<string>Headers/Firebase.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CD1AE4EBE09E33C7908B7A4FADE3C666</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>19029B6275C72587EF862B64A5C446E5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>GoogleNetworkingUtilities</string>
+			<key>path</key>
+			<string>GoogleNetworkingUtilities</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1240,16 +1323,16 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>D1403CA191226A9585E54E830C90B34B</key>
+		<key>CFB1A25D86D7CA5B2BE01666CC3C829D</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>839FD0D0AAFEB35D199E6EAA02E24CB9</string>
-			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>Frameworks</string>
+			<string>FirebaseRemoteConfig.framework</string>
+			<key>path</key>
+			<string>Frameworks/FirebaseRemoteConfig.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1321,21 +1404,6 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>D26355D03249A78E007803FEBC075130</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0556A3332919D85E7C3BCBA8C2279178</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>FirebaseRemoteConfig</string>
-			<key>path</key>
-			<string>FirebaseRemoteConfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>D41D8CD98F00B204E9800998ECF8427E</key>
 		<dict>
 			<key>attributes</key>
@@ -1374,32 +1442,40 @@
 				<string>22DEC1141438478385C757C6C9C62998</string>
 			</array>
 		</dict>
-		<key>DAADFE64D2E540FB80CF8130176670D6</key>
+		<key>D8174F0440C9721BB1D98FF7C39E9D3A</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>25DD8FDEFCC46F29A62736340A7694E2</string>
+				<string>8845C94FD18397DB56ADD681031BBD1B</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>GoogleUtilities</string>
-			<key>path</key>
-			<string>GoogleUtilities</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>DC1E4F3441508AB3DE3ED019DC295789</key>
+		<key>DBF011531CCDE4C8B8725F58906BDA40</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>FA0742F69ED12D07B20B5BE25A542F21</string>
-				<string>E3F675725C96718471882473BD0E1D61</string>
+				<string>5BDC4D576418D5FDB9BD168F179B2B0D</string>
+				<string>0E308DEBEBE94ACE3B876A76778FFB77</string>
+				<string>42D2CC51A03A504269AE077489D7801E</string>
+				<string>690E200AC86CB0095EA68A8DF9266C9A</string>
+				<string>FD2053112A0142B27A01988872FB95BB</string>
+				<string>5C94D90BBB5AC95BF69D05ED213B100A</string>
+				<string>CA65225DC7BD50388923C320820E5DC1</string>
+				<string>F9EF7AAF74141075FAACAEF9110B00E6</string>
+				<string>5860715B026CCAAA5CB98A6BDB911C3C</string>
+				<string>CD1AE4EBE09E33C7908B7A4FADE3C666</string>
+				<string>342E90B2BA10D4A2C59AEB1A676240DB</string>
+				<string>6D0A4AB8405B379B4F560D285EB547D6</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Auth</string>
+			<string>Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1417,55 +1493,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>E3F675725C96718471882473BD0E1D61</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>285FC6E53355697C4E56D1AF5FBBAA0D</string>
-				<string>AA98BDE01B5C5DBCC5655078AF6C7FA9</string>
-				<string>3EA89BFEC7E1481E83083909299CCE7D</string>
-				<string>48530CD42A5C70763AC2DC0B8F75A56A</string>
-				<string>5FD79AA1428074633B71F02312D00405</string>
-				<string>33083AE63E0DFF9471A4A18648FA23F7</string>
-				<string>94F4A98D23934FE94341242E10B66386</string>
-				<string>1D8AF4BF4F31DEC5EAC5ACCFB8019A5B</string>
-				<string>88E2ECCAEA3FA35B4934393CD47C2D5A</string>
-				<string>801EC632A2C560251CEA4F2D783C603F</string>
-				<string>7B06B91F69A3F6C6F191A0E0A92648FC</string>
-				<string>C34A9F697CF33DFCBBA3B4E8173B9BEB</string>
-				<string>BD94986F8D030A063CB357A5DEF98A1B</string>
-				<string>3C695576B082982B58F68959B2175171</string>
-				<string>8630F0A17C3ADB20E10792EB5D774740</string>
-				<string>0A17826177B4543DDC1BEBCCED755107</string>
-				<string>EA8442B3C3427A312D82812EA7C560E2</string>
-				<string>1D3B83BB9454FB86B5304DD59D70783B</string>
-				<string>00E886CA1F5851E59C98652C01505722</string>
-				<string>1739EF83EEB473467C27CB15BE93DB21</string>
-				<string>F9EFA7C14E8EDC1B3A42E23518207AAE</string>
-				<string>AA7F695CB54E32626115CC90A5F1D136</string>
-				<string>94523BDEF8421FEDB520FE55BB893C85</string>
-				<string>23D210D0997D544F4940AE5004D2A0D7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E91815617EDCE5B227BEA1E237FDF1E0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>FirebaseAuthUI.framework</string>
-			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>E9789B9D7155820F043699D21B6DDA2F</key>
 		<dict>
 			<key>fileRef</key>
@@ -1473,16 +1500,31 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>EA8442B3C3427A312D82812EA7C560E2</key>
+		<key>EC63C3F226C2248C9393126D9820BE84</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FIRInstanceID.h</string>
+			<key>path</key>
+			<string>Headers/Public/FIRInstanceID.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC87670A4D9DAF5377D0BAB91BFEC04C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>ic_email@2x.png</string>
+			<string>FIRAuthUITableViewCell~ipad.nib</string>
 			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_email@2x.png</string>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIRAuthUITableViewCell~ipad.nib</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1506,24 +1548,11 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>F9EFA7C14E8EDC1B3A42E23518207AAE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>ic_visibility@3x.png</string>
-			<key>path</key>
-			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility@3x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA0742F69ED12D07B20B5BE25A542F21</key>
+		<key>F87C074E3DD0BC6AA6CFE29979F27226</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>E91815617EDCE5B227BEA1E237FDF1E0</string>
+				<string>83AAC5D036AFA33BA0486422D1B5E644</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1532,44 +1561,73 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>FB876C401525C10E8FEA46B0419891BB</key>
+		<key>F9B6ED9A6EC8E8073C95DAF6C24DE321</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>FIREmailEntryViewController~ipad.nib</string>
+			<key>path</key>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FIREmailEntryViewController~ipad.nib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F9EF7AAF74141075FAACAEF9110B00E6</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>8DBF2E8397053A02C1D5135600091BD3</string>
+				<string>470972E8CE0F2316685C13B877143834</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>FirebaseAuth</string>
+			<string>GoogleInterchangeUtilities</string>
 			<key>path</key>
-			<string>FirebaseAuth</string>
+			<string>GoogleInterchangeUtilities</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>FEEF247FBE461E80B46A947B9EA0E69F</key>
+		<key>FA420F0373B18C1CC9B601EEDB7E36A9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>ic_email@2x.png</string>
+			<key>path</key>
+			<string>FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_email@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA8410C439D7D8FB9F0AB222DA747DB1</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>GoogleSymbolUtilities.framework</string>
+			<string>GoogleInterchangeUtilities.framework</string>
 			<key>path</key>
-			<string>Frameworks/GoogleSymbolUtilities.framework</string>
+			<string>Frameworks/GoogleInterchangeUtilities.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>FF256F55895C039042F0EA8635C13834</key>
+		<key>FD2053112A0142B27A01988872FB95BB</key>
 		<dict>
+			<key>children</key>
+			<array>
+				<string>0D79633891A581D9FBE41750CF0D3F5C</string>
+				<string>7D16CE7EB59B64A61ADE4AB5CAFF86D0</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>FirebaseAnalytics.framework</string>
+			<string>FirebaseMessaging</string>
 			<key>path</key>
-			<string>Frameworks/FirebaseAnalytics.framework</string>
+			<string>FirebaseMessaging</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
