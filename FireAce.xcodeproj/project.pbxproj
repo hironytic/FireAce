@@ -19,6 +19,8 @@
 		50594B9A1D8BC4E90075247D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50594B991D8BC4E90075247D /* Assets.xcassets */; };
 		50594B9D1D8BC4E90075247D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50594B9B1D8BC4E90075247D /* LaunchScreen.storyboard */; };
 		508EA1281D8BC9FE004B00A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 508EA1271D8BC9FE004B00A1 /* GoogleService-Info.plist */; };
+		50BE170E1D9123D00088F8D9 /* CloudMessaging.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50BE170D1D9123D00088F8D9 /* CloudMessaging.storyboard */; };
+		50BE17101D9123E40088F8D9 /* CloudMessagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BE170F1D9123E40088F8D9 /* CloudMessagingViewController.swift */; };
 		6E63063747CA2B24ABD8A7EA /* Pods_FireAce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE78FF540503C22EAFEF31A8 /* Pods_FireAce.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		50594B9C1D8BC4E90075247D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50594B9E1D8BC4E90075247D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		508EA1271D8BC9FE004B00A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		50BE170D1D9123D00088F8D9 /* CloudMessaging.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CloudMessaging.storyboard; sourceTree = "<group>"; };
+		50BE170F1D9123E40088F8D9 /* CloudMessagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudMessagingViewController.swift; sourceTree = "<group>"; };
 		B7236A96CFBDA1765013A545 /* Pods-FireAce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireAce.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireAce/Pods-FireAce.release.xcconfig"; sourceTree = "<group>"; };
 		DE78FF540503C22EAFEF31A8 /* Pods_FireAce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireAce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,6 +117,7 @@
 				50392A921D8D861E008FA159 /* Analytics */,
 				50392A971D8E8787008FA159 /* Authentication */,
 				50392A9C1D8F860D008FA159 /* RemoteConfig */,
+				50BE170C1D9123BB0088F8D9 /* CloudMessaging */,
 				50594B921D8BC4E90075247D /* AppDelegate.swift */,
 				50392A901D8D5A1B008FA159 /* RootViewController.swift */,
 				50594B961D8BC4E90075247D /* Main.storyboard */,
@@ -122,6 +127,15 @@
 				508EA1271D8BC9FE004B00A1 /* GoogleService-Info.plist */,
 			);
 			path = FireAce;
+			sourceTree = "<group>";
+		};
+		50BE170C1D9123BB0088F8D9 /* CloudMessaging */ = {
+			isa = PBXGroup;
+			children = (
+				50BE170D1D9123D00088F8D9 /* CloudMessaging.storyboard */,
+				50BE170F1D9123E40088F8D9 /* CloudMessagingViewController.swift */,
+			);
+			path = CloudMessaging;
 			sourceTree = "<group>";
 		};
 		89B45334FBCA9FD0F7B8C7D3 /* Pods */ = {
@@ -199,6 +213,7 @@
 				50594B9D1D8BC4E90075247D /* LaunchScreen.storyboard in Resources */,
 				508EA1281D8BC9FE004B00A1 /* GoogleService-Info.plist in Resources */,
 				50392A941D8D8649008FA159 /* Analytics.storyboard in Resources */,
+				50BE170E1D9123D00088F8D9 /* CloudMessaging.storyboard in Resources */,
 				50594B9A1D8BC4E90075247D /* Assets.xcassets in Resources */,
 				50594B981D8BC4E90075247D /* Main.storyboard in Resources */,
 			);
@@ -262,6 +277,7 @@
 				50392A9E1D8F8633008FA159 /* RemoteConfigViewController.swift in Sources */,
 				50392A991D8E87A3008FA159 /* AuthenticationViewController.swift in Sources */,
 				50594B931D8BC4E90075247D /* AppDelegate.swift in Sources */,
+				50BE17101D9123E40088F8D9 /* CloudMessagingViewController.swift in Sources */,
 				50392A911D8D5A1B008FA159 /* RootViewController.swift in Sources */,
 				50392A961D8D86B1008FA159 /* AnalyticsViewController.swift in Sources */,
 			);

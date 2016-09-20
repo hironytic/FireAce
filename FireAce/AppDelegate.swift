@@ -55,11 +55,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             application.registerForRemoteNotifications()
         }
         
-        NSNotificationCenter.defaultCenter().addObserver(self,
-                                                         selector: #selector(self.tokenRefreshNotification),
-                                                         name: kFIRInstanceIDTokenRefreshNotification,
-                                                         object: nil)
-        
         return true
     }
 
@@ -96,12 +91,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Print full message.
         print("%@", userInfo)
-    }
-
-    func tokenRefreshNotification(notification: NSNotification) {
-        if let refreshedToken = FIRInstanceID.instanceID().token() {
-            print("InstanceID token: \(refreshedToken)")
-        }        
     }
 }
 
