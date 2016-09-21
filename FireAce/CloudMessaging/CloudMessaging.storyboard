@@ -34,13 +34,83 @@
                                     <outletCollection property="gestureRecognizers" destination="Wp3-n4-wTo" appends="YES" id="VCf-Ei-qaW"/>
                                 </connections>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqp-1K-RYw">
+                                <rect key="frame" x="20" y="94" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unsubscribe from" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56x-0B-MkX">
+                                <rect key="frame" x="20" y="169" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ch-TP-nQ9">
+                                <rect key="frame" x="36" y="123" width="40" height="30"/>
+                                <state key="normal" title="Apple"/>
+                                <connections>
+                                    <action selector="subscribeToAppleTapped:" destination="mEc-0Z-2ah" eventType="touchUpInside" id="nQJ-uV-HqP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5h-4F-XCT">
+                                <rect key="frame" x="100" y="123" width="51" height="30"/>
+                                <state key="normal" title="Orange"/>
+                                <connections>
+                                    <action selector="subsctibeToOrangeTapped:" destination="mEc-0Z-2ah" eventType="touchUpInside" id="w9D-i9-tV2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52x-ST-Lde">
+                                <rect key="frame" x="175" y="123" width="51" height="30"/>
+                                <state key="normal" title="Banana"/>
+                                <connections>
+                                    <action selector="subscribeToBananaTapped:" destination="mEc-0Z-2ah" eventType="touchUpInside" id="tl1-Ie-J1r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msC-vz-9b4">
+                                <rect key="frame" x="36" y="198" width="40" height="30"/>
+                                <state key="normal" title="Apple"/>
+                                <connections>
+                                    <action selector="unsubscribeFromAppleTapped:" destination="mEc-0Z-2ah" eventType="touchUpInside" id="dDL-eB-ecn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMN-ju-P4I">
+                                <rect key="frame" x="100" y="198" width="51" height="30"/>
+                                <state key="normal" title="Orange"/>
+                                <connections>
+                                    <action selector="unsubscribeFromOrangeTapped:" destination="mEc-0Z-2ah" eventType="touchUpInside" id="RKp-Vp-d0Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Auu-7a-y6P">
+                                <rect key="frame" x="175" y="198" width="51" height="30"/>
+                                <state key="normal" title="Banana"/>
+                                <connections>
+                                    <action selector="unsubscribeFromBananaTapped:" destination="mEc-0Z-2ah" eventType="touchUpInside" id="xag-uj-lKa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="msC-vz-9b4" firstAttribute="leading" secondItem="56x-0B-MkX" secondAttribute="leading" constant="16" id="A8l-UE-yK1"/>
+                            <constraint firstItem="g5h-4F-XCT" firstAttribute="baseline" secondItem="7Ch-TP-nQ9" secondAttribute="baseline" id="Dn2-ov-xB9"/>
                             <constraint firstItem="aru-MU-m2i" firstAttribute="top" secondItem="ecb-Fm-hnY" secondAttribute="bottom" constant="8" id="FY4-3W-pif"/>
+                            <constraint firstItem="wqp-1K-RYw" firstAttribute="top" secondItem="aru-MU-m2i" secondAttribute="bottom" constant="16" id="GvI-QN-jDr"/>
+                            <constraint firstItem="KMN-ju-P4I" firstAttribute="leading" secondItem="msC-vz-9b4" secondAttribute="trailing" constant="24" id="Ibl-Me-tyM"/>
+                            <constraint firstItem="KMN-ju-P4I" firstAttribute="baseline" secondItem="msC-vz-9b4" secondAttribute="baseline" id="Jfz-o4-Cwx"/>
+                            <constraint firstItem="52x-ST-Lde" firstAttribute="baseline" secondItem="g5h-4F-XCT" secondAttribute="baseline" id="Ka5-JW-VBH"/>
+                            <constraint firstItem="Auu-7a-y6P" firstAttribute="leading" secondItem="KMN-ju-P4I" secondAttribute="trailing" constant="24" id="PIX-Z1-pg5"/>
+                            <constraint firstItem="7Ch-TP-nQ9" firstAttribute="top" secondItem="wqp-1K-RYw" secondAttribute="bottom" constant="8" id="QjL-T9-7L0"/>
+                            <constraint firstItem="msC-vz-9b4" firstAttribute="top" secondItem="56x-0B-MkX" secondAttribute="bottom" constant="8" id="W20-Ai-mDa"/>
+                            <constraint firstItem="56x-0B-MkX" firstAttribute="top" secondItem="7Ch-TP-nQ9" secondAttribute="bottom" constant="16" id="afb-Pd-JAY"/>
                             <constraint firstItem="ecb-Fm-hnY" firstAttribute="top" secondItem="0If-p1-P3t" secondAttribute="bottom" constant="8" id="bgg-zp-q7H"/>
                             <constraint firstItem="ecb-Fm-hnY" firstAttribute="leading" secondItem="qOn-gq-pdp" secondAttribute="leadingMargin" id="bs6-fd-mrd"/>
+                            <constraint firstItem="56x-0B-MkX" firstAttribute="leading" secondItem="wqp-1K-RYw" secondAttribute="leading" id="fyB-dm-Fta"/>
+                            <constraint firstItem="7Ch-TP-nQ9" firstAttribute="leading" secondItem="wqp-1K-RYw" secondAttribute="leading" constant="16" id="lZh-Og-R5n"/>
+                            <constraint firstItem="52x-ST-Lde" firstAttribute="leading" secondItem="g5h-4F-XCT" secondAttribute="trailing" constant="24" id="mCb-Pu-Wbd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aru-MU-m2i" secondAttribute="trailing" id="nT2-Er-SJm"/>
+                            <constraint firstItem="wqp-1K-RYw" firstAttribute="leading" secondItem="ecb-Fm-hnY" secondAttribute="leading" id="pBk-rV-QzG"/>
+                            <constraint firstItem="Auu-7a-y6P" firstAttribute="baseline" secondItem="KMN-ju-P4I" secondAttribute="baseline" id="sRo-Xc-mwg"/>
+                            <constraint firstItem="g5h-4F-XCT" firstAttribute="leading" secondItem="7Ch-TP-nQ9" secondAttribute="trailing" constant="24" id="uQy-sh-SFu"/>
                             <constraint firstItem="aru-MU-m2i" firstAttribute="leading" secondItem="ecb-Fm-hnY" secondAttribute="leading" constant="16" id="v2H-rM-v6m"/>
                         </constraints>
                     </view>

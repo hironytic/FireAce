@@ -63,4 +63,28 @@ class CloudMessagingViewController: UIViewController {
             print("Token: \(token)")
         }
     }
+    
+    @IBAction func subscribeToAppleTapped(sender: AnyObject) {
+        FIRMessaging.messaging().subscribeToTopic("/topics/apple")
+    }
+    
+    @IBAction func subsctibeToOrangeTapped(sender: AnyObject) {
+        FIRMessaging.messaging().subscribeToTopic("/topics/orange")
+    }
+    
+    @IBAction func subscribeToBananaTapped(sender: AnyObject) {
+        FIRMessaging.messaging().subscribeToTopic("/topics/banana")
+    }
+    
+    @IBAction func unsubscribeFromAppleTapped(sender: AnyObject) {
+        FIRMessaging.messaging().unsubscribeFromTopic("/topics/apple")
+    }
+    
+    @IBAction func unsubscribeFromOrangeTapped(sender: AnyObject) {
+        FIRMessaging.messaging().unsubscribeFromTopic("/topics/orange")
+    }
+    
+    @IBAction func unsubscribeFromBananaTapped(sender: AnyObject) {
+        FIRMessaging.messaging().unsubscribeFromTopic("/topics/banana")
+    }
 }
