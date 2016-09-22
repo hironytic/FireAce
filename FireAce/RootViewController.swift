@@ -38,6 +38,7 @@ class RootViewController: UITableViewController {
         RootViewItem(id: "authentication", title: "Authentication", storyboardName: "Authentication"),
         RootViewItem(id: "remote_config", title: "Remote Config", storyboardName: "RemoteConfig"),
         RootViewItem(id: "cloud_messaging", title: "Cloud Messaging", storyboardName: "CloudMessaging"),
+        RootViewItem(id: "crash_reporting", title: "Crash Reporting", storyboardName: "CrashReporting"),
     ]
     
     override func viewDidLoad() {

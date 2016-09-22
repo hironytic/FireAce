@@ -142,3 +142,33 @@ FirebaseコンソールのNotificationsから通知を作成。時間設定な�
   - バージョン
 - トピックへ通知
   - アプリ側で `FIRMessaging.messaging().subscribeToTopic()` で購読しているユーザーに通知
+
+## Crash Reporting
+
+#### シンボルのアップロード
+
+- サービスアカウントの作成
+  - Firebaseコンソールで歯車のアイコン → 権限
+  - サービス アカウント → サービス アカウントを作成
+  - サービス アカウント名に「Symbol Upload service account」を入れて
+  - 役割「プロジェクト＞編集者」
+  - 「新しい秘密鍵の提供」にチェックを入れる → キーのタイプ「JSON」
+  - 作成ボタンを押すとサービスアカウントが作成され、JSONファイルがダウンロードされる
+- XcodeプロジェクトのBuild PhasesにRun Scriptを追加
+  - Build Phases → + → Run Script
+    ```sh
+    JSON_FILE="${SRCROOT}/SymbolUploadServiceAccount.json"
+
+    GOOGLE_APP_ID=`plutil -convert json -o - "${SRCROOT}/GoogleService-Info.plist" | ruby -r json -e 'print JSON.parse(STDIN.read)["GOOGLE_APP_ID"]'`
+
+    defaults write com.google.SymbolUpload version -integer 1   # creates file if it does not exist
+    JSON=$(cat "${JSON_FILE}")
+    /usr/bin/plutil -replace "app_${GOOGLE_APP_ID//:/_}" -json "${JSON}" "$HOME/Library/Preferences/com.google.SymbolUpload.plist"
+    "${PODS_ROOT}"/FirebaseCrash/upload-sym    
+    ```
+
+#### クラッシュに至るログ
+
+```swift
+FIRCrashMessage("crash! 2")
+```

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qmy-YX-GZQ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Crash Reporting-->
+        <scene sceneID="Vyw-yC-w2A">
+            <objects>
+                <viewController title="Crash Reporting" id="Qmy-YX-GZQ" customClass="CrashReportingViewController" customModule="FireAce" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aja-KK-CkQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="X5U-HA-f04"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uOG-g5-Oqh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shn-o4-vLM">
+                                <rect key="frame" x="20" y="36" width="56" height="30"/>
+                                <state key="normal" title="Crash! 1"/>
+                                <connections>
+                                    <action selector="crash1ButtonTapped:" destination="Qmy-YX-GZQ" eventType="touchUpInside" id="NEv-aZ-421"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnR-un-Mkh">
+                                <rect key="frame" x="108" y="36" width="58" height="30"/>
+                                <state key="normal" title="Crash! 2"/>
+                                <connections>
+                                    <action selector="crash2ButtonTapped:" destination="Qmy-YX-GZQ" eventType="touchUpInside" id="WKU-Iy-Cpp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UnR-un-Mkh" firstAttribute="baseline" secondItem="shn-o4-vLM" secondAttribute="baseline" id="2Rd-jp-sxc"/>
+                            <constraint firstItem="UnR-un-Mkh" firstAttribute="leading" secondItem="shn-o4-vLM" secondAttribute="trailing" constant="32" id="9Ol-GK-vmQ"/>
+                            <constraint firstItem="shn-o4-vLM" firstAttribute="top" secondItem="aja-KK-CkQ" secondAttribute="bottom" constant="16" id="JoG-FX-vWh"/>
+                            <constraint firstItem="shn-o4-vLM" firstAttribute="leading" secondItem="uOG-g5-Oqh" secondAttribute="leadingMargin" id="NVJ-oU-4NQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6jY-CT-eVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="459" y="168"/>
+        </scene>
+    </scenes>
+</document>

@@ -24,3 +24,4 @@ Carthage/
 
 # Firebase configuration
 GoogleService-Info.plist
+SymbolUploadServiceAccount.json
