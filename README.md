@@ -157,14 +157,9 @@ FirebaseコンソールのNotificationsから通知を作成。時間設定な�
 - XcodeプロジェクトのBuild PhasesにRun Scriptを追加
   - Build Phases → + → Run Script
     ```sh
-    JSON_FILE="${SRCROOT}/SymbolUploadServiceAccount.json"
-
     GOOGLE_APP_ID=`plutil -convert json -o - "${SRCROOT}/GoogleService-Info.plist" | ruby -r json -e 'print JSON.parse(STDIN.read)["GOOGLE_APP_ID"]'`
 
-    defaults write com.google.SymbolUpload version -integer 1   # creates file if it does not exist
-    JSON=$(cat "${JSON_FILE}")
-    /usr/bin/plutil -replace "app_${GOOGLE_APP_ID//:/_}" -json "${JSON}" "$HOME/Library/Preferences/com.google.SymbolUpload.plist"
-    "${PODS_ROOT}"/FirebaseCrash/upload-sym    
+    "${PODS_ROOT}"/FirebaseCrash/upload-sym "${SRCROOT}/SymbolUploadServiceAccount.json"
     ```
 
 #### クラッシュに至るログ

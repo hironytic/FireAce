@@ -283,7 +283,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "JSON_FILE=\"${SRCROOT}/SymbolUploadServiceAccount.json\"\n\nGOOGLE_APP_ID=`plutil -convert json -o - \"${SRCROOT}/GoogleService-Info.plist\" | ruby -r json -e 'print JSON.parse(STDIN.read)[\"GOOGLE_APP_ID\"]'`\n\ndefaults write com.google.SymbolUpload version -integer 1   # creates file if it does not exist\nJSON=$(cat \"${JSON_FILE}\")\n/usr/bin/plutil -replace \"app_${GOOGLE_APP_ID//:/_}\" -json \"${JSON}\" \"$HOME/Library/Preferences/com.google.SymbolUpload.plist\"\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym\n";
+			shellScript = "GOOGLE_APP_ID=`plutil -convert json -o - \"${SRCROOT}/GoogleService-Info.plist\" | ruby -r json -e 'print JSON.parse(STDIN.read)[\"GOOGLE_APP_ID\"]'`\n\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"${SRCROOT}/SymbolUploadServiceAccount.json\"";
 		};
 		AA223521AC54CDEB636C1465 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
