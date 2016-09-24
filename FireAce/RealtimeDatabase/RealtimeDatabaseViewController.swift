@@ -30,39 +30,52 @@ struct TodoItem {
     let itemId: String
     let content: String
     let completed: Bool
+    let priority: Int
     
     init?(snapshot: FIRDataSnapshot) {
         self.itemId = snapshot.key
         guard let value = snapshot.value as? [String: AnyObject] else { return nil }
         self.content = value["content"] as? String ?? ""
         self.completed = value["completed"] as? Bool ?? false
+        self.priority = value["priority"] as? Int ?? 3
     }
 }
 
 class RealtimeDatabaseViewController: UITableViewController {
     let todosRef = FIRDatabase.database().reference().child("todos")
+    var todosQuery: FIRDatabaseQuery
     var items: [TodoItem] = []
     var childAddedHandle: FIRDatabaseHandle = 0
     var childRemovedHandle: FIRDatabaseHandle = 0
     var childChangedHandle: FIRDatabaseHandle = 0
+    var childMovedHandle: FIRDatabaseHandle = 0
+    
+    required init?(coder decoder: NSCoder) {
+        todosQuery = todosRef.queryOrderedByChild("priority")
+        super.init(coder: decoder)
+    }
     
     deinit {
-        todosRef.removeObserverWithHandle(childAddedHandle)
-        todosRef.removeObserverWithHandle(childRemovedHandle)
-        todosRef.removeObserverWithHandle(childChangedHandle)
+        todosQuery.removeObserverWithHandle(childAddedHandle)
+        todosQuery.removeObserverWithHandle(childRemovedHandle)
+        todosQuery.removeObserverWithHandle(childChangedHandle)
+        todosQuery.removeObserverWithHandle(childMovedHandle)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        childAddedHandle = todosRef.observeEventType(.ChildAdded, withBlock:{ [unowned self] snapshot in
+        childAddedHandle = todosQuery.observeEventType(.ChildAdded, andPreviousSiblingKeyWithBlock: { [unowned self] (snapshot, prevKey) in
             if let item = TodoItem(snapshot: snapshot) {
-                self.items.append(item)
+                print("Added: \(item.itemId) => \(item.content)")
+                
+                let prevIndex = prevKey.flatMap({ prevKey in self.items.indexOf({ $0.itemId == prevKey }) }) ?? -1
+                self.items.insert(item, atIndex: prevIndex + 1)
                 self.tableView.reloadData()
             }
         })
         
-        childRemovedHandle = todosRef.observeEventType(.ChildRemoved, withBlock: { [unowned self] snapshot in
+        childRemovedHandle = todosQuery.observeEventType(.ChildRemoved, withBlock: { [unowned self] snapshot in
             let itemId = snapshot.key
             if let index = self.items.indexOf({ $0.itemId == itemId }) {
                 self.items.removeAtIndex(index)
@@ -70,7 +83,7 @@ class RealtimeDatabaseViewController: UITableViewController {
             }
         })
         
-        childChangedHandle = todosRef.observeEventType(.ChildChanged, withBlock: { [unowned self] snapshot in
+        childChangedHandle = todosQuery.observeEventType(.ChildChanged, withBlock: { [unowned self] snapshot in
             let itemId = snapshot.key
             if let index = self.items.indexOf({ $0.itemId == itemId }) {
                 if let newItem = TodoItem(snapshot: snapshot) {
@@ -78,6 +91,21 @@ class RealtimeDatabaseViewController: UITableViewController {
                     self.tableView.reloadData()
                 }
             }
+        })
+        
+        childMovedHandle = todosQuery.observeEventType(.ChildMoved, andPreviousSiblingKeyWithBlock: { [unowned self] (snapshot, prevKey) in
+            print("Move: snapshot:\(snapshot.key), prevKey:\(prevKey)")
+            
+            guard let oldIndex = self.items.indexOf({ $0.itemId == snapshot.key }) else { return }
+            let newIndex = (prevKey.flatMap({ prevKey in self.items.indexOf({ $0.itemId == prevKey }) }) ?? -1) + 1
+            
+            let item = self.items.removeAtIndex(oldIndex)
+            if (oldIndex < newIndex) {
+                self.items.insert(item, atIndex: newIndex - 1)
+            } else {
+                self.items.insert(item, atIndex: newIndex)
+            }
+            self.tableView.reloadData()
         })
     }
     
@@ -97,6 +125,7 @@ class RealtimeDatabaseViewController: UITableViewController {
         newItem.updateChildValues([
             "content": "New ToDo",
             "completed": false,
+            "priority": 3,
         ])
     }
 
@@ -114,7 +143,7 @@ class RealtimeDatabaseViewController: UITableViewController {
         let item = items[indexPath.row]
         
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-        cell.textLabel?.text = (item.completed ? "\u{2713} " : "") + item.content
+        cell.textLabel?.text = (item.completed ? "\u{2713} " : "") + "[\(item.priority)]" + item.content
         cell.accessoryType = .DisclosureIndicator
         return cell
     }
@@ -137,6 +166,7 @@ class RealtimeDatabaseViewController: UITableViewController {
 class EditTodoViewController : UITableViewController {
     @IBOutlet weak var contentField: UITextField!
     @IBOutlet weak var completeSwitch: UISwitch!
+    @IBOutlet weak var prioritySegmented: UISegmentedControl!
     
     var itemId: String!
     var contentEditing: Bool = false
@@ -153,6 +183,7 @@ class EditTodoViewController : UITableViewController {
 
         contentField.enabled = false
         completeSwitch.enabled = false
+        prioritySegmented.enabled = false
 
         todoRef = FIRDatabase.database().reference().child("todos/\(itemId)")
         valueHandle = todoRef.observeEventType(.Value, withBlock: { [unowned self] snapshot in
@@ -167,6 +198,9 @@ class EditTodoViewController : UITableViewController {
                 
                 self.completeSwitch.on = completed
                 self.completeSwitch.enabled = true
+                
+                self.prioritySegmented.selectedSegmentIndex = item.priority - 1
+                self.prioritySegmented.enabled = true
             } else {
                 // this data might have been removed
                 self.navigationController?.popViewControllerAnimated(true)
@@ -188,6 +222,11 @@ class EditTodoViewController : UITableViewController {
     @IBAction func completeSwitchValueChanged(sender: AnyObject) {
         let completed = completeSwitch.on
         todoRef.child("completed").setValue(completed)
+    }
+    
+    @IBAction func priorityValueChanged(sender: AnyObject) {
+        let priority = prioritySegmented.selectedSegmentIndex + 1
+        todoRef.child("priority").setValue(priority)
     }
     
     @IBAction func deleteButtonTapped(sender: AnyObject) {
