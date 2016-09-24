@@ -12,5 +12,6 @@ target 'FireAce' do
   pod 'Firebase/RemoteConfig'
   pod 'Firebase/Messaging'
   pod 'Firebase/Crash'
+  pod 'Firebase/Database'
   
 end

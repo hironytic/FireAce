@@ -24,6 +24,8 @@
 		50E618691D917FA800CAFEC1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E618681D917FA800CAFEC1 /* Utils.swift */; };
 		50F78FFE1D9490BD0091DF81 /* CrashReportingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F78FFD1D9490BD0091DF81 /* CrashReportingViewController.swift */; };
 		50F790001D9491020091DF81 /* CrashReporting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F78FFF1D9491020091DF81 /* CrashReporting.storyboard */; };
+		50F790051D951A440091DF81 /* RealtimeDatabase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F790041D951A440091DF81 /* RealtimeDatabase.storyboard */; };
+		50F98D851D9521F70035F30C /* RealtimeDatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F98D841D9521F70035F30C /* RealtimeDatabaseViewController.swift */; };
 		6E63063747CA2B24ABD8A7EA /* Pods_FireAce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE78FF540503C22EAFEF31A8 /* Pods_FireAce.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 		50E618681D917FA800CAFEC1 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		50F78FFD1D9490BD0091DF81 /* CrashReportingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashReportingViewController.swift; sourceTree = "<group>"; };
 		50F78FFF1D9491020091DF81 /* CrashReporting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CrashReporting.storyboard; sourceTree = "<group>"; };
+		50F790041D951A440091DF81 /* RealtimeDatabase.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RealtimeDatabase.storyboard; sourceTree = "<group>"; };
+		50F98D841D9521F70035F30C /* RealtimeDatabaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeDatabaseViewController.swift; sourceTree = "<group>"; };
 		B7236A96CFBDA1765013A545 /* Pods-FireAce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireAce.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireAce/Pods-FireAce.release.xcconfig"; sourceTree = "<group>"; };
 		DE78FF540503C22EAFEF31A8 /* Pods_FireAce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireAce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,6 +129,7 @@
 				50392A9C1D8F860D008FA159 /* RemoteConfig */,
 				50BE170C1D9123BB0088F8D9 /* CloudMessaging */,
 				50F78FFC1D94909E0091DF81 /* CrashReporting */,
+				50F790011D95183A0091DF81 /* RealtimeDatabase */,
 				50594B921D8BC4E90075247D /* AppDelegate.swift */,
 				50392A901D8D5A1B008FA159 /* RootViewController.swift */,
 				50594B961D8BC4E90075247D /* Main.storyboard */,
@@ -153,6 +158,15 @@
 				50F78FFD1D9490BD0091DF81 /* CrashReportingViewController.swift */,
 			);
 			path = CrashReporting;
+			sourceTree = "<group>";
+		};
+		50F790011D95183A0091DF81 /* RealtimeDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				50F790041D951A440091DF81 /* RealtimeDatabase.storyboard */,
+				50F98D841D9521F70035F30C /* RealtimeDatabaseViewController.swift */,
+			);
+			path = RealtimeDatabase;
 			sourceTree = "<group>";
 		};
 		89B45334FBCA9FD0F7B8C7D3 /* Pods */ = {
@@ -234,6 +248,7 @@
 				50392A941D8D8649008FA159 /* Analytics.storyboard in Resources */,
 				50BE170E1D9123D00088F8D9 /* CloudMessaging.storyboard in Resources */,
 				50594B9A1D8BC4E90075247D /* Assets.xcassets in Resources */,
+				50F790051D951A440091DF81 /* RealtimeDatabase.storyboard in Resources */,
 				50594B981D8BC4E90075247D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +329,7 @@
 				50E618691D917FA800CAFEC1 /* Utils.swift in Sources */,
 				50BE17101D9123E40088F8D9 /* CloudMessagingViewController.swift in Sources */,
 				50392A911D8D5A1B008FA159 /* RootViewController.swift in Sources */,
+				50F98D851D9521F70035F30C /* RealtimeDatabaseViewController.swift in Sources */,
 				50392A961D8D86B1008FA159 /* AnalyticsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
