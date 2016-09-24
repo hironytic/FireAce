@@ -42,7 +42,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Realtime Database" id="eqx-qB-mGl">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gL9-4e-h10"/>
+                        <barButtonItem key="rightBarButtonItem" title="≡" id="gL9-4e-h10">
+                            <connections>
+                                <action selector="menuButtonTapped:" destination="k9X-ru-IXc" id="HD3-Q4-es4"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>

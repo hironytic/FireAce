@@ -80,6 +80,25 @@ class RealtimeDatabaseViewController: UITableViewController {
             }
         })
     }
+    
+    @IBAction func menuButtonTapped(sender: AnyObject) {
+        let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
+        alertController.addAction(UIAlertAction(title: "Add New ToDo", style: .Default, handler: { [weak self] action in
+            self?.addNewToDo()
+        }))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: { [weak self] action in
+            self?.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    func addNewToDo() {
+        let newItem = todosRef.childByAutoId()
+        newItem.updateChildValues([
+            "content": "New ToDo",
+            "completed": false,
+        ])
+    }
 
     // MARK: - Table view data source
 
