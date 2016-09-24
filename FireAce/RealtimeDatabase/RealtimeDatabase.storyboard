@@ -139,6 +139,35 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="9mz-jZ-0vJ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="v6e-KN-1oP">
+                                        <rect key="frame" x="0.0" y="223" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v6e-KN-1oP" id="WwM-na-9Uv">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1h2-7y-ulU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                                    <state key="normal" title="Delete">
+                                                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="deleteButtonTapped:" destination="0f8-xu-4uq" eventType="touchUpInside" id="66B-wJ-YPa"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1h2-7y-ulU" firstAttribute="leading" secondItem="WwM-na-9Uv" secondAttribute="leading" id="0yV-Ke-TI0"/>
+                                                <constraint firstItem="1h2-7y-ulU" firstAttribute="top" secondItem="WwM-na-9Uv" secondAttribute="top" id="C20-DW-mwr"/>
+                                                <constraint firstAttribute="trailing" secondItem="1h2-7y-ulU" secondAttribute="trailing" id="JPQ-8h-gPL"/>
+                                                <constraint firstAttribute="bottom" secondItem="1h2-7y-ulU" secondAttribute="bottom" id="mX5-WI-BEU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="0f8-xu-4uq" id="e68-DN-aFE"/>

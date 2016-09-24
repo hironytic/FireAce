@@ -156,17 +156,21 @@ class EditTodoViewController : UITableViewController {
 
         todoRef = FIRDatabase.database().reference().child("todos/\(itemId)")
         valueHandle = todoRef.observeEventType(.Value, withBlock: { [unowned self] snapshot in
-            let item = TodoItem(snapshot: snapshot)
-            let content = item?.content ?? ""
-            let completed = item?.completed ?? false
-            
-            if !self.contentEditing {
-                self.contentField.text = content
+            if let item = TodoItem(snapshot: snapshot) {
+                let content = item.content ?? ""
+                let completed = item.completed ?? false
+                
+                if !self.contentEditing {
+                    self.contentField.text = content
+                }
+                self.contentField.enabled = true
+                
+                self.completeSwitch.on = completed
+                self.completeSwitch.enabled = true
+            } else {
+                // this data might have been removed
+                self.navigationController?.popViewControllerAnimated(true)
             }
-            self.contentField.enabled = true
-            
-            self.completeSwitch.on = completed
-            self.completeSwitch.enabled = true
         })
     }
     
@@ -184,5 +188,14 @@ class EditTodoViewController : UITableViewController {
     @IBAction func completeSwitchValueChanged(sender: AnyObject) {
         let completed = completeSwitch.on
         todoRef.child("completed").setValue(completed)
-    }    
+    }
+    
+    @IBAction func deleteButtonTapped(sender: AnyObject) {
+        let alertController = UIAlertController(title: "Are you sure to delete this item?", message: nil, preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "Delete", style: .Destructive, handler: { [weak self] action in
+            self?.todoRef.removeValue()
+        }))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
+        presentViewController(alertController, animated: true, completion: nil)
+    }
 }
