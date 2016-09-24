@@ -67,8 +67,6 @@ class RealtimeDatabaseViewController: UITableViewController {
 
         childAddedHandle = todosQuery.observeEventType(.ChildAdded, andPreviousSiblingKeyWithBlock: { [unowned self] (snapshot, prevKey) in
             if let item = TodoItem(snapshot: snapshot) {
-                print("Added: \(item.itemId) => \(item.content)")
-                
                 let prevIndex = prevKey.flatMap({ prevKey in self.items.indexOf({ $0.itemId == prevKey }) }) ?? -1
                 self.items.insert(item, atIndex: prevIndex + 1)
                 self.tableView.reloadData()
@@ -94,8 +92,6 @@ class RealtimeDatabaseViewController: UITableViewController {
         })
         
         childMovedHandle = todosQuery.observeEventType(.ChildMoved, andPreviousSiblingKeyWithBlock: { [unowned self] (snapshot, prevKey) in
-            print("Move: snapshot:\(snapshot.key), prevKey:\(prevKey)")
-            
             guard let oldIndex = self.items.indexOf({ $0.itemId == snapshot.key }) else { return }
             let newIndex = (prevKey.flatMap({ prevKey in self.items.indexOf({ $0.itemId == prevKey }) }) ?? -1) + 1
             
